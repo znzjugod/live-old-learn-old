@@ -1,1 +1,2 @@
-学习资料：https://www.cnblogs.com/arnoldlu/p/7211249.html
+ftrace学习资料：https://www.cnblogs.com/arnoldlu/p/7211249.html
+The Linux Kernel Tracepoint API(The Linux Kernel 6.4.0):https://www.kernel.org/doc/html/latest/core-api/tracepoint.html#:~:text=The%20block_rq_complete%20tracepoint%20event%20indicates%20that%20some%20portion,is%20additional%20work%20required%20to%20complete%20the%20request.
