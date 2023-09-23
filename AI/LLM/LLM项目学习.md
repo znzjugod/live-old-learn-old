@@ -18,13 +18,12 @@
 |如何用大语言模型构建一个知识问答系统  |  https://mp.weixin.qq.com/s/movaNCWjJGBaes6KxhpYpg  | 垂直应用，问答  | 
 | 分享大模型相关技术原理以及实战经验。 |  https://github.com/liguodongiot/llm-action  |  上手实践 | 
 |一个用于插件和数据集的API，一个用于提示工程和可视化操作的接口  | https://github.com/langgenius/dify   |  更像是一个开发平台 | 
-|  |    |   | 
-|  |    |   | 
-|  |    |   | 
-|  |    |   | 
-|  |    |   | 
-|  |    |   | 
-|  |    |   | 
+| Fine-tunning和Embedding的区别 | https://www.bilibili.com/video/BV1nm4y187jp/?buvid=Y8435E899B008C414F6099E70739A61B9905&is_story_h5=false&mid=AhrVIOV3%2BaVZYbLOsCzB8A%3D%3D&p=1&plat_id=114&share_from=ugc&share_plat=ios&share_session_id=2A2A2608-6481-49A2-9F4D-AE7BA9D9A88F&share_tag=s_i&unique_k=hzP0YSU&up_id=2031846058&vd_source=3db8d59e474aec14fd2147ee171becfa；https://www.promptengineering.org/master-prompt-engineering-llm-embedding-and-fine-tuning/   |  资料学习 | 
+| Langchain-Chatchat |  https://github.com/chatchat-space/Langchain-Chatchat  | 垂直应用，问答  | 
+| Lamini：用于快速定制模型的LLM引擎 | https://github.com/lamini-ai/lamini   | 快速微调小模型  | 
+| 构筑大语言模型应用：应用开发与架构设计 |  https://aigc.phodal.com/future-ai-2.0.html  | 开发实践  | 
+| 探索prompt |  https://github.com/prompt-engineering/understand-prompt  | 上手实践  | 
+| k8sgpt  |   https://github.com/k8sgpt-ai/k8sgpt | 垂直应用，运维  | 
 |  |    |   | 
 |  |    |   | 
 |  |    |   | 
