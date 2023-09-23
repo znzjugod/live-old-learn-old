@@ -1,6 +1,6 @@
 | 标题            | 论文地址 | 方向 |
 |--------------------------------|------|------|
-|  |    |  |
+| LLM论文mark地址  |  https://github.com/AmadeusChan/Awesome-LLM-System-Papers  | 东南西北 |
 |  |    |  |
 |  |    |  |
 |  |    |  |
