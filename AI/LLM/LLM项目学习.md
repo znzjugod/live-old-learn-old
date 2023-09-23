@@ -1,5 +1,5 @@
 | llm学习（部署，langchain，and others）            | 学习地址 | 类型 |
-|--------------------------------|------|------|
+|------------------------------------------------------------------------------------------------|------|------|
 | LLMOps工具列表 |  https://github.com/tensorchord/Awesome-LLMOps  |  部署微调等  | 
 | 开源的中文大语言模型 | https://github.com/HqWu-HITCS/Awesome-Chinese-LLM   | 部署和一些垂直应用  | 
 | 大模型使用教学 |  https://github.com/datawhalechina/hugging-llm  |  上手实践  | 
