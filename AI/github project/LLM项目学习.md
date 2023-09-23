@@ -14,7 +14,7 @@
 | DB-GPT |  https://github.com/TsinghuaDatabaseGroup/DB-GPT  |  垂直应用，运维 | 
 | a UI for LangChain  |  https://github.com/logspace-ai/langflow  | 垂直应用，在langchain的基础上做可视化开发  | 
 |deeplearning.ai的langchain学习网站  |  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/?utm_campaign=langchain-launch&utm_medium=ema  | 上手实践  | 
-|  |    |   | 
+|老和山的同志们搞得LLM文档  |   https://github.com/OpenLLMAI/ChatPiXiu  |  微调embeding | 
 |  |    |   | 
 |  |    |   | 
 |  |    |   | 
