@@ -8,7 +8,7 @@
 |       Embodied Task Planning with Large Language Models的源码仓库            |https://github.com/Gary3410/TaPA  | 
 |      支持本地llama运行autogpt                | https://github.com/rhohndorf/Auto-Llama-cpp | 
 |      评估LLM作为agent的benchmark                | https://github.com/THUDM/AgentBench | 
-|                      |  | 
+|      多agent框架：给定一行需求，返回PRD、设计、任务、回购                | https://github.com/geekan/MetaGPT | 
 |                      |  | 
 |                      |  | 
 |                      |  | 
