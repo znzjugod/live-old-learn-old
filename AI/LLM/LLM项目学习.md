@@ -15,8 +15,8 @@
 | a UI for LangChain  |  https://github.com/logspace-ai/langflow  | 垂直应用，在langchain的基础上做可视化开发  | 
 |deeplearning.ai的langchain学习网站  |  https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/?utm_campaign=langchain-launch&utm_medium=ema  | 上手实践  | 
 |老和山的同志们搞得LLM文档  |   https://github.com/OpenLLMAI/ChatPiXiu  |  微调embeding | 
-|  |    |   | 
-|  |    |   | 
+|如何用大语言模型构建一个知识问答系统  |  https://mp.weixin.qq.com/s/movaNCWjJGBaes6KxhpYpg  | 垂直应用，问答  | 
+| 分享大模型相关技术原理以及实战经验。 |  https://github.com/liguodongiot/llm-action  |  上手实践 | 
 |  |    |   | 
 |  |    |   | 
 |  |    |   | 
