@@ -10,8 +10,8 @@
 |     gpt-sh                  | https://github.com/timoderbeste/gpt-sh  | 
 |   simple-gpt-shell                    | https://github.com/bobergda/simple-gpt-shell | 
 |    shell-ai                   | https://github.com/ricklamers/shell-ai | 
-|                       |  | 
-|                       |  | 
+|    engshell                   | https://github.com/emcf/engshell | 
+|     auto-copilot-cli                  | https://github.com/rsaryev/auto-copilot-cli | 
 |                       |  | 
 |                       |  | 
 |                       |  | 
