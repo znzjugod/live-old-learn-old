@@ -1,4 +1,3 @@
-一个阅读清单：https://linux.cn/article-9507-1.html
 |     可劲儿学吧        | 学习地址 | 
 |--------------------------------|------|
 | 1 |  https://linux.cn/article-9507-1.html  |
