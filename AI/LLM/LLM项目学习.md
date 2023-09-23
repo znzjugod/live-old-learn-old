@@ -24,7 +24,7 @@
 | 构筑大语言模型应用：应用开发与架构设计 |  https://aigc.phodal.com/future-ai-2.0.html  | 开发实践  | 
 | 探索prompt |  https://github.com/prompt-engineering/understand-prompt  | 上手实践  | 
 | k8sgpt  |   https://github.com/k8sgpt-ai/k8sgpt | 垂直应用，运维  | 
-|  |    |   | 
+| prompt设计教学 |  https://learnprompting.org/zh-Hans/docs/basics/intro  |  上手实践 | 
 |  |    |   | 
 |  |    |   | 
 |  |    |   | 
