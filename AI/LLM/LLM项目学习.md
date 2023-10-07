@@ -25,7 +25,7 @@
 | 探索prompt |  https://github.com/prompt-engineering/understand-prompt  | 上手实践  | 
 | k8sgpt  |   https://github.com/k8sgpt-ai/k8sgpt | 垂直应用，运维  | 
 | prompt设计教学 |  https://learnprompting.org/zh-Hans/docs/basics/intro  |  上手实践 | 
-|  |    |   | 
+| 无限制token框架 | https://github.com/mit-han-lab/streaming-llm   | LLM应用框架 | 
 |  |    |   | 
 |  |    |   | 
 |  |    |   | 
