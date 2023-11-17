@@ -12,24 +12,4 @@
 |    shell-ai                   | https://github.com/ricklamers/shell-ai | 
 |    engshell                   | https://github.com/emcf/engshell | 
 |     auto-copilot-cli                  | https://github.com/rsaryev/auto-copilot-cli | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
-|                       |  | 
+
