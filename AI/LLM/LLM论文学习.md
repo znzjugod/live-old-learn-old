@@ -1,44 +1,12 @@
 | 标题            | 论文地址 | 方向 |
 |--------------------------------|------|------|
-| LLM论文mark地址  |  https://github.com/AmadeusChan/Awesome-LLM-System-Papers  | 东南西北 |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
-|  |    |  |
+| LLM论文汇总地址  |  https://github.com/AmadeusChan/Awesome-LLM-System-Papers  | 东南西北包罗万象 |
+| Owl : A Large Language Model for IT Operations |  https://arxiv.org/pdf/2309.09298.pdf  | 运维 |
+|LLMParser: A LLM-based Log Parsing Framework  |  https://arxiv.org/pdf/2310.01796.pdf  | 日志解析 |
+| LLM As DBA |  https://arxiv.org/pdf/2308.05481.pdf  | 数据库运维 |
+|Empowering Practical Root Cause Analysis by Large Language Models for Cloud Incidents  |  https://arxiv.org/pdf/2305.15778.pdf  | 故障根因诊断 |
+|Enhancing the Configuration Tuning Pipeline of Large-Scale Distributed Applications Using Large Language Models  |  https://research.spec.org/icpe_proceedings/2023/companion/p39.pdf  | 调优  |
+| RCAgent: Cloud Root Cause Analysis by Autonomous Agents with Tool-Augmented Large Language Models |  https://arxiv.org/pdf/2310.16340.pdf  | 故障根因诊断 |
+| MEMGPT: TOWARDS LLMS AS OPERATING SYSTEMS |  https://arxiv.org/pdf/2310.08560.pdf  | 借助OS思想帮助llm处理超长上下文  |
+| Tree of Thoughts: Deliberate Problem Solving with Large Language Models |  https://arxiv.org/pdf/2305.10601.pdf  | 提升大模型推理规划能力 |
+| Prompt Sapper: LLM-Empowered Software Engineering Infrastructure for AI-Native Services | https://arxiv.org/pdf/2306.02230.pdf   | 软件开发 |
