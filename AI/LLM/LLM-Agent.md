@@ -11,27 +11,3 @@
 |      多agent框架：给定一行需求，返回PRD、设计、任务、回购                | https://github.com/geekan/MetaGPT | 
 |        经典agent              | https://github.com/microsoft/TaskMatrix | 
 |      Agent = LLM+ 记忆 + 规划技能 + 工具使用                | https://github.com/zzlgreat/smart_agent | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
-|                      |  | 
