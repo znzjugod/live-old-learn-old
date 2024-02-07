@@ -1,0 +1,94 @@
+在 Python 中，装饰器是一种非常有用的功能，它允许程序员扩展或修改函数、方法或类的行为，而不需要改变它们的实际代码。装饰器本质上是一个接受函数作为参数并返回一个新函数的函数。
+装饰器的作用通常有以下几点：
+1. **代码重用**：通过装饰器，可以在多个函数中重用相同的代码逻辑，避免代码重复。
+2. **功能增强**：可以在不修改原始函数代码的情况下，为函数添加额外的功能，如日志记录、性能测试、事务处理等。
+3. **权限校验**：在执行函数之前，可以使用装饰器来检查用户是否有足够的权限。
+4. **输入验证**：在函数执行之前，可以使用装饰器来验证输入参数是否符合预期。
+5. **缓存**：可以使用装饰器来缓存函数的执行结果，从而提高效率。
+6. **定时执行**：可以创建装饰器来定期执行函数，例如，每天、每周或每月执行一次。
+装饰器的使用方法是在定义函数时，将装饰器名称放在函数定义的上方，并用 `@` 符号表示。例如：
+```python
+def my_decorator(func):
+    def wrapper(*args, **kwargs):
+        # 在函数执行前可以添加一些代码
+        print("Something is happening before the function is called.")
+        result = func(*args, **kwargs)
+        # 在函数执行后可以添加一些代码
+        print("Something is happening after the function is called.")
+        return result
+    return wrapper
+@my_decorator
+def say_hello():
+    print("Hello!")
+say_hello()
+```
+在这个例子中，`my_decorator` 是一个装饰器，它定义了一个内部函数 `wrapper`，该函数会在 `say_hello` 函数执行前后分别打印一些信息。当调用 `say_hello` 函数时，实际上是调用了 `wrapper` 函数，这样就实现了对 `say_hello` 函数的增强。
+装饰器是 Python 高级编程中的一个强大工具，它们在框架设计、代码优化和许多其他场景中都非常有用。
+
+@abstractmethod
+在 Python 中，`@abstractmethod` 是 `abc` (Abstract Base Classes) 模块中的一个装饰器，用于指示一个方法必须由任何子类实现。当一个类包含一个或多个 `@abstractmethod` 装饰的方法时，这个类通常被称为抽象基类（Abstract Base Class，ABC）。
+`@abstractmethod` 的作用如下：
+1. **定义接口**：抽象基类定义了一组接口，子类必须实现这些接口。这有助于确保派生类具有必要的属性和方法。
+2. **强制实现**：如果一个类继承自一个包含 `@abstractmethod` 的抽象基类，那么这个类必须实现所有的抽象方法，否则它也将成为一个抽象类。
+3. **文档化意图**：使用 `@abstractmethod` 可以清晰地表达一个方法的目的是作为接口，而不是提供具体的实现。
+下面是一个使用 `@abstractmethod` 的例子：
+```python
+from abc import ABC, abstractmethod
+class Animal(ABC):
+    @abstractmethod
+    def make_sound(self):
+        pass
+class Dog(Animal):
+    def make_sound(self):
+        return "Woof!"
+class Cat(Animal):
+    def make_sound(self):
+        return "Meow!"
+# 错误示例：未实现抽象方法
+class Lion(Animal):
+    pass
+# 创建实例
+dog = Dog()
+cat = Cat()
+# 输出动物的声音
+print(dog.make_sound())  # 输出: Woof!
+print(cat.make_sound())  # 输出: Meow!
+# 错误示例：尝试创建未实现抽象方法的抽象类的实例
+# lion = Lion()  # 这将引发 TypeError: Can't instantiate abstract class Lion with abstract methods make_sound
+```
+在这个例子中，`Animal` 类是一个抽象基类，它有一个 `make_sound` 抽象方法。`Dog` 和 `Cat` 类继承自 `Animal` 类并实现了 `make_sound` 方法。如果我们尝试创建一个 `Lion` 类的实例，它没有实现 `make_sound` 方法，Python 将会抛出一个 `TypeError`。
+使用 `@abstractmethod` 可以帮助确保派生类遵循特定的协议，从而提高代码的可靠性和可维护性。
+
+@dataclass
+在 Python 中，`@dataclass` 装饰器是 Python 3.7 及以上版本的标准库 `dataclasses` 模块中的一个功能，它用于自动生成一个类的 `__init__`、`__repr__`、`__eq__`、`__lt__`、`__le__`、`__gt__` 和 `__ge__` 方法。这使得创建只包含数据的类（通常称为数据类）变得更加简单和快速。
+下面是使用 `@dataclass` 装饰器的一个基本示例：
+```python
+from dataclasses import dataclass
+@dataclass
+class Person:
+    name: str
+    age: int
+# 创建一个 Person 实例
+person = Person(name="Alice", age=30)
+# 输出实例的字符串表示
+print(person)  # 输出: Person(name='Alice', age=30)
+# 比较两个实例
+another_person = Person(name="Alice", age=30)
+print(person == another_person)  # 输出: True
+```
+在这个例子中，`Person` 类被标记为 `@dataclass`。这意味着 Python 会自动为它添加一个 `__init__` 方法，该方法接受 `name` 和 `age` 参数，并设置为实例属性。同时，还会添加一个 `__repr__` 方法，该方法返回一个实例的字符串表示，以及比较方法，允许实例之间的比较。
+`@dataclass` 装饰器还提供了一些其他的功能和选项，例如：
+- `order`: 指定是否生成比较方法，以及它们的严格程度。
+- `frozen`: 如果设置为 `True`，则创建一个不可变的类，其属性不能被修改。
+- `init`: 控制是否自动生成 `__init__` 方法。
+- `repr`: 控制是否自动生成 `__repr__` 方法。
+- `eq`: 控制是否自动生成 `__eq__` 方法。
+- `slots`: 如果设置为 `True`，则使用 `__slots__` 来节省内存。
+例如，如果你想创建一个不可变的数据类，可以这样做：
+```python
+@dataclass(frozen=True)
+class ImmutablePerson:
+    name: str
+    age: int
+```
+现在，`ImmutablePerson` 类的实例一旦创建，其属性就不能被修改。如果尝试修改，将会抛出一个 `dataclasses.FrozenInstanceError` 异常。
