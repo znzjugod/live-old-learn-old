@@ -125,3 +125,53 @@ print(my_instance.instance_variable)  # 输出: Updated instance variable value
 4. **替代构造函数**：在 Python 中，你可以使用类方法来提供多个构造函数，例如 `MyClass.from_string()` 或 `MyClass.from_file()`。
 类方法是 Python 面向对象编程中一个强大的工具，它们提供了一种在类级别上操作和访问数据的方式。
 
+@staticmethod
+在 Python 中，`@staticmethod` 是一个装饰器，用于定义静态方法。静态方法与普通实例方法和类方法的不同之处在于，静态方法既不需要访问实例状态也不需要访问类状态，也就是说，静态方法不需要第一个参数来传递实例或类本身（如 `self` 或 `cls`）。
+静态方法基本上是类中的一个普通函数，它只是碰巧在类的命名空间中。静态方法可以调用类的其他方法和访问类的属性，但它们通常用于与类有逻辑关联但不依赖于其具体实例状态的任务。
+下面是 `@staticmethod` 的基本用法：
+```python
+class MyClass:
+    class_variable = "I am a class variable."
+    def __init__(self, value):
+        self.instance_variable = value
+    @staticmethod
+    def my_static_method():
+        print("This is a static method.")
+    def my_instance_method(self):
+        print("This is an instance method.")
+# 调用静态方法
+MyClass.my_static_method()  # 输出: This is a static method.
+# 创建 MyClass 的实例
+my_instance = MyClass("Hello")
+# 调用实例方法
+my_instance.my_instance_method()  # 输出: This is an instance method.
+```
+在这个例子中，`my_static_method` 是一个静态方法，它没有参数，并且不依赖于类或实例的状态。
+静态方法通常用于以下几种情况：
+1. **工具函数**：当你有一些与类紧密相关的功能，但这些功能不需要访问类或实例的状态时，可以使用静态方法。
+2. **计算或转换**：如果你需要进行一些计算或数据转换，并且这些操作与类有关，但不依赖于任何实例变量，可以使用静态方法。
+3. **作为构造函数的辅助**：有时你可能需要一个辅助函数来帮助构造函数，这个辅助函数不需要访问实例，可以使用静态方法。
+静态方法是 Python 面向对象编程中的一个特性，它们提供了一种将相关功能组织在类中的方式，即使这些功能不需要访问类或实例的状态。
+在 Python 中，静态方法通常在以下情况下使用：
+1. **工具函数**：当你有一个与类紧密相关的功能，但它不需要访问类或实例的状态时，可以将它定义为静态方法。这样做有助于组织代码，并将相关功能放在一个逻辑位置。
+2. **工厂方法**：当你需要从类中创建实例，但创建过程需要根据不同的参数返回不同类型的实例时，可以使用静态方法来封装这个逻辑。
+3. **计算或转换**：如果你需要进行一些与类相关的计算或数据转换，并且这些操作不依赖于任何实例变量，可以使用静态方法。
+4. **不需要实例化就能使用的方法**：有时你可能需要一个方法来执行一些操作，但这些操作不需要访问实例或类状态。在这种情况下，使用静态方法可以避免不必要的实例化。
+5. **与类相关的常量**：虽然 Python 没有内置的常量类型，但你可以使用静态方法来返回一些与类相关的常量值。
+6. **替代构造函数**：在 Python 中，你可以使用静态方法来提供多个构造函数，例如 `MyClass.from_string()` 或 `MyClass.from_file()`。
+7. **避免传递 `self` 或 `cls` 参数**：当你定义的方法不需要访问实例或类状态时，使用静态方法可以避免不必要的参数传递。
+下面是一个使用静态方法的例子：
+```python
+class MathUtils:
+    @staticmethod
+    def add(a, b):
+        return a + b
+    @staticmethod
+    def subtract(a, b):
+        return a - b
+# 使用静态方法
+result = MathUtils.add(10, 5)  # 输出: 15
+result = MathUtils.subtract(10, 5)  # 输出: 5
+```
+在这个例子中，`MathUtils` 类有两个静态方法 `add` 和 `subtract`，它们分别用于加法和减法计算。这些方法不需要访问类或实例的状态，因此它们被定义为静态方法。
+
