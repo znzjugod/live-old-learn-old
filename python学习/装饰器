@@ -175,3 +175,57 @@ result = MathUtils.subtract(10, 5)  # 输出: 5
 ```
 在这个例子中，`MathUtils` 类有两个静态方法 `add` 和 `subtract`，它们分别用于加法和减法计算。这些方法不需要访问类或实例的状态，因此它们被定义为静态方法。
 
+@property
+在Python中，`@property`是一个装饰器，用于将类方法转换为相同名称的只读属性。这样做可以让属性的访问看起来像访问普通变量一样，但实际上背后执行的是方法调用。这个功能非常有用，因为它可以让你在获取属性值的同时执行一些额外的操作，比如验证数据、计算值或者延迟初始化等。
+下面是一个简单的例子，展示了如何使用`@property`：
+```python
+class Circle:
+    def __init__(self, radius):
+        self._radius = radius
+    @property
+    def radius(self):
+        """获取半径的值"""
+        return self._radius
+    @property
+    def diameter(self):
+        """获取直径的值"""
+        return self._radius * 2
+    @property
+    def area(self):
+        """获取面积的值"""
+        return 3.141592653589793 * self._radius ** 2
+# 使用Circle类
+c = Circle(5)
+print(c.radius)      # 输出: 5
+print(c.diameter)    # 输出: 10
+print(c.area)        # 输出: 78.53981633974483
+```
+在上面的例子中，`Circle`类有三个属性：`radius`、`diameter`和`area`。这些属性看起来像是普通的变量，但实际上它们是方法，通过`@property`装饰器转换成了只读属性。这意味着你不能直接设置这些属性的值，从而保护了类的内部状态。
+如果你想要允许属性的设置和删除，你可以使用额外的装饰器`@属性名.setter`和`@属性名.deleter`。例如：
+```python
+class Circle:
+    def __init__(self, radius):
+        self._radius = radius
+    @property
+    def radius(self):
+        """获取半径的值"""
+        return self._radius
+    @radius.setter
+    def radius(self, value):
+        """设置半径的值"""
+        if value < 0:
+            raise ValueError("半径不能为负")
+        self._radius = value
+    @radius.deleter
+    def radius(self):
+        """删除半径的值"""
+        del self._radius
+# 使用Circle类
+c = Circle(5)
+print(c.radius)  # 输出: 5
+c.radius = 10
+print(c.radius)  # 输出: 10
+del c.radius
+# 此时尝试访问c.radius将会引发AttributeError，因为半径已经被删除了
+```
+在这个例子中，我们添加了`radius`属性的设置和删除方法。这样就可以在设置新值之前进行验证，或者在删除属性时执行一些清理操作。
