@@ -21,6 +21,9 @@ perf record -F 99 -g -- ./my_program
 perf record -e instructions -e cache-references -g -- ./my_program
 
 perf script -i perf.data > perf.unfold
+
 FlameGraph/stackcollapse-perf.pl perf.unfold > perf.folded
+
 FlameGraph/flamegraph.pl perf.folded > perf.svg
+
 perf script -i perf.data | ./FlameGraph/stackcollapse-perf.pl | ./FlameGraph/flamegraph.pl > perf.svg
