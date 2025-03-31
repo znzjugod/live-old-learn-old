@@ -20,6 +20,12 @@ perf record -F 99 -g -- ./my_program
 监控特定事件:
 perf record -e instructions -e cache-references -g -- ./my_program
 
+off-cpu
+
+perf record -e sched:sched_stat_sleep -e sched:sched_switch \
+-e sched:sched_process_exit
+
+
 perf script -i perf.data > perf.unfold
 
 FlameGraph/stackcollapse-perf.pl perf.unfold > perf.folded
